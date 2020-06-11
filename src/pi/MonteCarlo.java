@@ -1,11 +1,11 @@
 package pi;
-//import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class MonteCarlo {
-    int contador;
+    AtomicInteger exitos, total;
     int lanzamientos;
-    double ValorPi;
     int nHilos;
+
     class MC implements Runnable {
         int m_lanzamientos;
         
@@ -18,17 +18,20 @@ public class MonteCarlo {
             for (int i=1; i <= m_lanzamientos;i++){
                 double x = Math.random();
                 double y = Math.random();
-                if (x * x + y * y <= 1)
-                    contador++;
+                if(x*x + y*y< 1.0)
+                    exitos.incrementAndGet();
+                total.incrementAndGet();
             }
         }
     }
+
     public MonteCarlo (int i, int nHilos) {
-        this.contador = 0;
+        this.exitos = new AtomicInteger(0);
+        this.total = new AtomicInteger(0);
         this.lanzamientos = i;
-        this.ValorPi = 0;
         this.nHilos = nHilos;
     }
+
     public double calculaPi(){
         Thread[] hilos = new Thread[nHilos];
         for(int i=0; i< nHilos; i++) {
@@ -40,8 +43,8 @@ public class MonteCarlo {
                 hilos[i].join();
             }
         }catch(Exception e){}
-        System.out.println("Contador: " + contador);
-        return 4.0 * contador / lanzamientos;
+        System.out.println("Exitos: " + exitos.get()+" Totales: "+ total.get());
+        return 4.0 * exitos.get() / total.get();
     }
 
 }
