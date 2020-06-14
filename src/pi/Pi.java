@@ -3,10 +3,11 @@ package pi;
 
 public class Pi {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        
+        int nHilos = Integer.parseInt(System.console().readLine("Determine cantidad de threads:"));
+        int nLanzamientos = Integer.parseInt(System.console().readLine("Determine cantidad de lanzamientos:"));
+        MonteCarlo ValorPi = new MonteCarlo(nLanzamientos, nHilos);
         long t_inicial = System.currentTimeMillis();
-        double val = PiVal.getPi();
+        double val = ValorPi.calculaPi();
         long t_final = System.currentTimeMillis();
         System.out.println("Valor aproximado: " + val);
         System.out.println("Valor verdadero de pi:" + Math.PI);
