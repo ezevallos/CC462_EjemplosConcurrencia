@@ -1,14 +1,22 @@
-## Getting Started
+<center><h1>
+Universidad Nacional de Ingeniería
+</center></h1s>
+<center><h2>
+Factultad de Ciencias
+</center></h2>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+![EscudoUNI](https://upload.wikimedia.org/wikipedia/commons/f/f7/Uni-logo_transparente_granate.png)
 
-## Folder Structure
+<center><h2>
+CC462 - Sistemas Concurrentes y Distribuidos
+</center></h2>
 
-The workspace contains two folders by default, where:
+### Profesor:
+Profesor Yuri Núñez
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Alumnos:
+ALEGRE IBÁÑEZ, Víctor Augusto       20130504C
 
-## Dependency Management
+ZAVALETA BUENO, Romel Rolando       20120236F
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+ZEVALLOS LABARTHE, Enrique Martín   20130384H
