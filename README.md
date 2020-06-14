@@ -20,3 +20,7 @@ ALEGRE IBÁÑEZ, Víctor Augusto       20130504C
 ZAVALETA BUENO, Romel Rolando       20120236F
 
 ZEVALLOS LABARTHE, Enrique Martín   20130384H
+
+<center><h2>
+Junio 2020
+</center></h2>
