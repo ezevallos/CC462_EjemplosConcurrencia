@@ -5,7 +5,7 @@ Universidad Nacional de Ingeniería
 Factultad de Ciencias
 </center></h2>
 
-![EscudoUNI](https://upload.wikimedia.org/wikipedia/commons/f/f7/Uni-logo_transparente_granate.png){:height="200px" width="200px"}
+![EscudoUNI](https://i.ibb.co/26DssY5/Escudo-UNI.png)
 
 <center><h2>
 CC462 - Sistemas Concurrentes y Distribuidos
