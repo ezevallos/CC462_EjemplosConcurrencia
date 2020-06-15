@@ -39,17 +39,29 @@ Para ejecutarlo concurrentemente, construimos un método llamado arctan que inst
 Nótese que para obtener una cantidad mayor de decimales, hacemos uso de la clase `BigDecimal`.
 
 #### Ejecución:
-Al ejecutar el programa, se nos pide mediante la consola ingresar la cantidad de hilos a utilizar, y el número de dígitos que deseamos obtener. A continuación una muestra, mostramos primero lo que aparece en consola, y luego el archivo de texto creado, `valor_pi_1592186401.txt`:
+Al ejecutar el programa, se nos pide mediante la consola ingresar la cantidad de hilos a utilizar, y el número de dígitos que deseamos obtener. A continuación dos muestras, la primera ejecutando sólo un hilo y la segunda ejecutando 4. Mostramos primero lo que aparece en consola, y luego el archivo de texto creado, `valor_pi_..._.txt`:
 
+##### Muestra 1:
 ```bash
 (consola)
 Determine cantidad de threads:1
-Determine cantidad de digitos:10000
-Pi impreso en: valor_pi_1592186401.txt
-Duración del programa:650 milisegundos.
+Determine cantidad de digitos:50000
+Pi impreso en: valor_pi_1592186968.txt
+Duración del programa:4644 milisegundos.
 (archivo_texto)
-Tiempo: 650milisegundos.
+Tiempo: 4644milisegundos.
 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326 ... 256959688159205600101655256375679
+```
+##### Muestra 2:
+```bash
+(consola)
+Determine cantidad de threads:4
+Determine cantidad de digitos:50000
+Pi impreso en: valor_pi_1592186951.txt
+Duración del programa:1594 milisegundos.
+(archivo_texto)
+Tiempo: 1594milisegundos.
+3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326...256959688159205600101655256375679
 ```
 
 ### Problema 2.- Implementar un método de ordenamiento utilizando hilos.
