@@ -5,7 +5,7 @@ Universidad Nacional de Ingeniería
 Factultad de Ciencias
 </center></h2>
 
-![EscudoUNI](https://upload.wikimedia.org/wikipedia/commons/f/f7/Uni-logo_transparente_granate.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Uni-logo_transparente_granate.png" alt="EscudoUNI",width="200"/>
 
 <center><h2>
 CC462 - Sistemas Concurrentes y Distribuidos
@@ -79,6 +79,8 @@ La verificación de los pasos 1 y 2 se encuentran dentro del método recursivo `
 
 #### Ejecución:
 Hemos utilizado dos hilos de ejemplo, definidos en el main. En el código se configura el tamaño del conjunto de números a ordenar, los cuales se generan de forma aleatoria entre 0 y 1000. En consola mostraremos los números ordenados línea a línea, y luego el tiempo de ejecución.
+(**Nota: Se puede probar con una mayor cantidad de datos. Sin embargo, para no ocupar todo el buffer de consola, comentar la impresión de los números.**)
+Se realizó una ejecución de 4,000,000 de datos, en 528 milisegundos.
 
 #### Muestra:
 
