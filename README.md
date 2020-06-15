@@ -78,7 +78,64 @@ El ordenamiento utilizado es el ordenamiento `MergeSort`. Se basa en la técnica
 La verificación de los pasos 1 y 2 se encuentran dentro del método recursivo `MergeSort` en la clase `Ordenador`. El paso 3 se encuentra dentro del método `merge` de la misma clase. El último paso se encuentra dentro del método `finalmerge` de la clase `MergeSortHilos`.
 
 #### Ejecución:
-Hemos utilizado dos hilos de ejemplo, definidos en el main. En el código se configura el tamaño del conjunto de números a ordenar, los cuales se generan de forma aleatoria. 
+Hemos utilizado dos hilos de ejemplo, definidos en el main. En el código se configura el tamaño del conjunto de números a ordenar, los cuales se generan de forma aleatoria entre 0 y 1000. En consola mostraremos los números ordenados línea a línea, y luego el tiempo de ejecución.
+
+#### Muestra:
+
+```bash
+Lista ordenada
+10 
+20 
+61 
+79 
+81 
+110
+111
+112
+152
+186
+206
+211
+236
+254
+257
+270
+279
+310
+326
+358
+380
+388
+390
+390
+411
+454
+484
+502
+544
+558
+567
+573
+637
+663
+668
+672
+692
+713
+728
+756
+783
+801
+808
+823
+863
+895
+895
+904
+916
+981
+El orden nos toma: 0.178 segundos
+```
 
 ## Bibliografía:
 
