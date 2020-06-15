@@ -4,13 +4,9 @@ import java.util.Random; //biblioteca para implementar Array a ordenar
 
 
 public class MergeSortHilos {
-
-
     public static void main(String[] args) throws InterruptedException{
         Random aleatorio = new Random();
-
-        int[] arreglo_sin_ordenar = new int[50];
-        
+        int[] arreglo_sin_ordenar = new int[50];        
         //generar aleatoriamente el arreglo a ordenar
         for(int i=0;i<arreglo_sin_ordenar.length;i++){
             //System.out.println("entro");
@@ -36,7 +32,6 @@ public class MergeSortHilos {
         hilo2.join();
 
 
-
         int [] ordenado=finalMerge (hilo1.getInternal(), hilo2.getInternal());
 
         System.out.println("Lista ordenada");
@@ -48,13 +43,6 @@ public class MergeSortHilos {
         long fin_tiempo = System.currentTimeMillis();
         long duracion = fin_tiempo - inicio_tiempo;
         System.out.println("El orden nos toma: " + (float)duracion/1000 + " segundos");
-
-        /*
-        for(int i=0;i<arreglo_sin_ordenar.length;i++){
-            //System.out.println("entro");
-            arreglo_sin_ordenar[i]=aleatorio.nextInt(1000);
-        }*/
-
     }
 
 
