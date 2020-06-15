@@ -66,6 +66,20 @@ Tiempo: 1594milisegundos.
 
 ### Problema 2.- Implementar un método de ordenamiento utilizando hilos.
 
+#### Planteamiento:
+El ordenamiento utilizado es el ordenamiento `MergeSort`. Se basa en la técnica divide y vencerás (*divide and conquer*). Fue desarrollado por John Von Neumann en 1945. El método a utilizar será:
+
+1. Si la longitud de la lista es 0 o 1, ya está ordenada. De lo contrario, pasamos al siguiente caso.
+2. Dividir la lista desordenada en dos sub-listas de aproximadamente el mismo tamaño.
+3. Ordenar cada sub-lista recursivamente aplicando el ordenamiento `MergeSort`.
+4. Unir las dos sub-listas en una única lista ordenada.
+
+#### Código del programa:
+La verificación de los pasos 1 y 2 se encuentran dentro del método recursivo `MergeSort` en la clase `Ordenador`. El paso 3 se encuentra dentro del método `merge` de la misma clase. El último paso se encuentra dentro del método `finalmerge` de la clase `MergeSortHilos`.
+
+#### Ejecución:
+Hemos utilizado dos hilos de ejemplo, definidos en el main. En el código se configura el tamaño del conjunto de números a ordenar, los cuales se generan de forma aleatoria. 
+
 ## Bibliografía:
 
 <a id="1">[1]</a>: FRIESEN, J. (2015). Chapter 1: Performing More Advanced Thread Tasks - Joining Threads. In Java Threads and the Concurrency Utilities (pp. 12-15). Berkeley, CA: Apress.
