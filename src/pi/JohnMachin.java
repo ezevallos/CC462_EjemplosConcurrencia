@@ -17,11 +17,15 @@ public class JohnMachin  {
 
     public static BigDecimal calculaPi(int digits){
         int escala = digits + 5;
-        BigDecimal acrtan1_5 = arctan(5, escala);
+        BigDecimal arctan1_5 = arctan(5, escala);
         BigDecimal arctan1_239 = arctan(239, escala);
         BigDecimal pi = arctan1_5.multiply(CUATRO).
                         subtract(arctan1_239).multiply(CUATRO);
         return pi.setScale(digits, BigDecimal.ROUND_HALF_UP);
+    }
+
+    public BigDecimal getResultado(){
+        return result;
     }
 
     public static BigDecimal arctan (int inversoX, int escala){
@@ -41,6 +45,7 @@ public class JohnMachin  {
                 resultado = resultado.add(termino);
             i++;
         }while(termino.compareTo(BigDecimal.ZERO) != 0);
+        System.out.println("Numero de iteraciones: "+i);
         return resultado;
     }
 }
